@@ -1,0 +1,111 @@
+2018-11-19 12:06:40.873  INFO 7012 --- [restartedMain] cn.stylefeng.guns.GunsApplication        : Starting GunsApplication on 19-thinkpad with PID 7012 (C:\_github\guns\target\classes started by 19 in C:\_github\guns)
+2018-11-19 12:06:40.878  INFO 7012 --- [restartedMain] cn.stylefeng.guns.GunsApplication        : No active profile set, falling back to default profiles: default
+2018-11-19 12:06:41.001  INFO 7012 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d0d6855: startup date [Mon Nov 19 12:06:41 CST 2018]; root of context hierarchy
+2018-11-19 12:06:42.654  INFO 7012 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'codeController' with a different definition: replacing [Generic bean: class [cn.stylefeng.guns.generator.modular.controller.CodeController]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/project/m2/cn/stylefeng/guns/guns-generator/1.0.0/guns-generator-1.0.0.jar!/cn/stylefeng/guns/generator/modular/controller/CodeController.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.guns.generator.config.GeneratorAutoConfiguration; factoryMethodName=codeController; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/generator/config/GeneratorAutoConfiguration.class]]
+2018-11-19 12:06:42.658  INFO 7012 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'tableService' with a different definition: replacing [Generic bean: class [cn.stylefeng.guns.generator.modular.service.TableService]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/project/m2/cn/stylefeng/guns/guns-generator/1.0.0/guns-generator-1.0.0.jar!/cn/stylefeng/guns/generator/modular/service/TableService.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.guns.generator.config.GeneratorAutoConfiguration; factoryMethodName=tableService; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/generator/config/GeneratorAutoConfiguration.class]]
+2018-11-19 12:06:43.235  INFO 7012 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [cn.stylefeng.guns.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$cb37c608] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:06:43.373  INFO 7012 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:06:43.847  INFO 7012 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:06:43.870  INFO 7012 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [cn.stylefeng.guns.config.EhCacheConfig$$EnhancerBySpringCGLIB$$dd08e890] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:06:43.890  INFO 7012 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2018-11-19 12:06:44.116  INFO 7012 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:06:44.129  INFO 7012 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:06:44.132  WARN 7012 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webConfig': Unsatisfied dependency expressed through field 'gunsProperties'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilter' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodInvokingFactoryBean' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'methodInvokingFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 2; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'securityManager': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2018-11-19 12:06:44.133  INFO 7012 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2018-11-19 12:06:44.163  INFO 7012 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-19 12:06:44.178 ERROR 7012 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   webConfig (field private cn.stylefeng.guns.config.properties.GunsProperties cn.stylefeng.guns.config.web.WebConfig.gunsProperties)
+      ↓
+   shiroFilter defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+      ↓
+   methodInvokingFactoryBean defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+┌─────┐
+|  securityManager defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+└─────┘
+
+
+2018-11-19 12:07:11.583  INFO 2564 --- [restartedMain] cn.stylefeng.guns.GunsApplication        : Starting GunsApplication on 19-thinkpad with PID 2564 (C:\_github\guns\target\classes started by 19 in C:\_github\guns)
+2018-11-19 12:07:11.601  INFO 2564 --- [restartedMain] cn.stylefeng.guns.GunsApplication        : No active profile set, falling back to default profiles: default
+2018-11-19 12:07:11.832  INFO 2564 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1488d6c9: startup date [Mon Nov 19 12:07:11 CST 2018]; root of context hierarchy
+2018-11-19 12:07:13.607  INFO 2564 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'codeController' with a different definition: replacing [Generic bean: class [cn.stylefeng.guns.generator.modular.controller.CodeController]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/project/m2/cn/stylefeng/guns/guns-generator/1.0.0/guns-generator-1.0.0.jar!/cn/stylefeng/guns/generator/modular/controller/CodeController.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.guns.generator.config.GeneratorAutoConfiguration; factoryMethodName=codeController; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/generator/config/GeneratorAutoConfiguration.class]]
+2018-11-19 12:07:13.611  INFO 2564 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'tableService' with a different definition: replacing [Generic bean: class [cn.stylefeng.guns.generator.modular.service.TableService]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/project/m2/cn/stylefeng/guns/guns-generator/1.0.0/guns-generator-1.0.0.jar!/cn/stylefeng/guns/generator/modular/service/TableService.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.guns.generator.config.GeneratorAutoConfiguration; factoryMethodName=tableService; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/generator/config/GeneratorAutoConfiguration.class]]
+2018-11-19 12:07:14.194  INFO 2564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [cn.stylefeng.guns.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$623d6d82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:07:14.319  INFO 2564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:07:14.819  INFO 2564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:07:14.836  INFO 2564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [cn.stylefeng.guns.config.EhCacheConfig$$EnhancerBySpringCGLIB$$740e900a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:07:14.849  INFO 2564 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2018-11-19 12:07:15.010  INFO 2564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:07:15.022  INFO 2564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:07:15.025  WARN 2564 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webConfig': Unsatisfied dependency expressed through field 'gunsProperties'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilter' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodInvokingFactoryBean' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'methodInvokingFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 2; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'securityManager': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2018-11-19 12:07:15.026  INFO 2564 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2018-11-19 12:07:15.053  INFO 2564 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-19 12:07:15.062 ERROR 2564 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   webConfig (field private cn.stylefeng.guns.config.properties.GunsProperties cn.stylefeng.guns.config.web.WebConfig.gunsProperties)
+      ↓
+   shiroFilter defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+      ↓
+   methodInvokingFactoryBean defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+┌─────┐
+|  securityManager defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+└─────┘
+
+
+2018-11-19 12:43:23.561  INFO 15196 --- [restartedMain] cn.stylefeng.guns.GunsApplication        : Starting GunsApplication on 19-thinkpad with PID 15196 (C:\_github\guns\target\classes started by 19 in C:\_github\guns)
+2018-11-19 12:43:23.565  INFO 15196 --- [restartedMain] cn.stylefeng.guns.GunsApplication        : No active profile set, falling back to default profiles: default
+2018-11-19 12:43:23.670  INFO 15196 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f424592: startup date [Mon Nov 19 12:43:23 CST 2018]; root of context hierarchy
+2018-11-19 12:43:26.300  INFO 15196 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'codeController' with a different definition: replacing [Generic bean: class [cn.stylefeng.guns.generator.modular.controller.CodeController]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/project/m2/cn/stylefeng/guns/guns-generator/1.0.0/guns-generator-1.0.0.jar!/cn/stylefeng/guns/generator/modular/controller/CodeController.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.guns.generator.config.GeneratorAutoConfiguration; factoryMethodName=codeController; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/generator/config/GeneratorAutoConfiguration.class]]
+2018-11-19 12:43:26.311  INFO 15196 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'tableService' with a different definition: replacing [Generic bean: class [cn.stylefeng.guns.generator.modular.service.TableService]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/C:/project/m2/cn/stylefeng/guns/guns-generator/1.0.0/guns-generator-1.0.0.jar!/cn/stylefeng/guns/generator/modular/service/TableService.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=cn.stylefeng.guns.generator.config.GeneratorAutoConfiguration; factoryMethodName=tableService; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cn/stylefeng/guns/generator/config/GeneratorAutoConfiguration.class]]
+2018-11-19 12:43:26.991  INFO 15196 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [cn.stylefeng.guns.config.web.ShiroConfig$$EnhancerBySpringCGLIB$$74bc9095] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:43:27.121  INFO 15196 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:43:27.566  INFO 15196 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rememberMeManager' of type [org.apache.shiro.web.mgt.CookieRememberMeManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:43:27.587  INFO 15196 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehCacheConfig' of type [cn.stylefeng.guns.config.EhCacheConfig$$EnhancerBySpringCGLIB$$868db31d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:43:27.609  INFO 15196 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Initializing EhCache CacheManager
+2018-11-19 12:43:27.815  INFO 15196 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'ehcache' of type [org.springframework.cache.ehcache.EhCacheManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:43:27.831  INFO 15196 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'getCacheShiroManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-19 12:43:27.837  WARN 15196 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webConfig': Unsatisfied dependency expressed through field 'gunsProperties'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilter' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilter' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'methodInvokingFactoryBean' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'methodInvokingFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityManager' defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]: Unsatisfied dependency expressed through method 'securityManager' parameter 2; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'securityManager': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2018-11-19 12:43:27.842  INFO 15196 --- [restartedMain] o.s.c.ehcache.EhCacheManagerFactoryBean  : Shutting down EhCache CacheManager
+2018-11-19 12:43:27.895  INFO 15196 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-19 12:43:27.905 ERROR 15196 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   webConfig (field private cn.stylefeng.guns.config.properties.GunsProperties cn.stylefeng.guns.config.web.WebConfig.gunsProperties)
+      ↓
+   shiroFilter defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+      ↓
+   methodInvokingFactoryBean defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+┌─────┐
+|  securityManager defined in class path resource [cn/stylefeng/guns/config/web/ShiroConfig.class]
+└─────┘
+
+
